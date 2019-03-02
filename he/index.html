@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Welcome to Nestor's Site | עברית </title>   
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../js/jquery-1.11.2.min.js"></script>
+        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="shortcut icon" type="../image/png" href="../img/web_icon.png"/> 
+         
+        <link rel="stylesheet" href="../add_ons/font-awesome-4.6.3/css/font-awesome.css"/>
+        <!-- The credit for the amazing Font Awesome plug-in goes to Dave Gandy (https://twitter.com/davegandy) and can be found at http://fontawesome.io/ -->
+        
+    </head>
+    <script>
+        $(document).ready(function() {
+            $('body').css('display', 'none');
+            $('body').fadeIn(500);
+            $('.link').click(function() {
+                event.preventDefault();
+                newLocation = this.href;
+                $('body').fadeOut(500, newpage);
+            });
+
+            function newpage(event) {
+                window.location = newLocation;
+            }
+        });        
+    </script>
+    <style type="text/css">
+    
+        nav li a {
+            font-size: 150%;
+        }
+        
+        #About {
+            background: url(../img/about_inverted.jpg) no-repeat center center fixed;
+            /* Although it's not required, i like to give credits where it's due. the picture was taken from https://pixabay.com which is a website for free use of pictures */
+        }
+        
+        .AboutRight{
+            float: left;
+        }
+
+            .AboutRight>p{
+                direction: rtl;
+                text-align: right;
+                margin: 14% 30px 0 10%;
+            }
+        
+        .AboutLeft{
+            float: left;
+        }
+        
+            .AboutLeft>img{
+                margin-right: 30%;
+            }
+        
+        .ResLeft{
+            direction:rtl;
+            width: 60%;
+        }
+        
+        .ResRight{
+            direction:rtl;
+            width: 38%;
+        }
+        
+        #Profile {
+            background: url(../img/resume_inverted.jpg) no-repeat center center fixed;
+            /* Although it's not required, i like to give credits where it's due. the picture was taken from https://pixabay.com which is a website for free use of pictures */
+        }
+    </style>
+    
+    <body>
+       
+        <!-- Home -->
+    <header>
+        <section id="Home">
+            <div class="homeDiv">
+                <div class="headlines" style="font-size:400%;">
+                    <div>
+                        <p>ברוכים הבאים</p>
+                    </div>
+                    <div>
+                        <p>שמי נסטור סרבקי</p>
+                    </div>
+                    <div>
+                        <p>ואני עובד כיועץ לאבטחת איכות</p>
+                    </div>
+                </div>   
+                <div id="ScrlDiv" class="bounce animated">
+                    <p id="scrollDown" style="font-size:150%;">גלול למטה<br></p>
+                    <p id="scrollDownArrow"><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li style="padding-right:100px;">
+                        <a href="../index.html">EN</a>
+                        <a>/</a>
+                        <a>עב</a>
+                        <a>/</a>
+                        <a href="../es/index.html">ES</a>
+                    </li>
+                    <li><a href="#Contact">צור קשר</a></li>
+                    <li><a href="#Profile">קורות חיים</a></li>
+                    <li><a href="#About">אודות</a></li>
+                    <li><a href="#Home">ראשי</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <!-- About -->
+    <section id="About">
+        <div class="AboutRight">
+            <p>שלום, שמי יוסף נסטור סרבקי, ואני יועץ לאבטחת איכות. <br><br>
+אני עובד כפרילנסר כמבקר מטעם Sibat (משרד הביטחון הישראלי) וה-DCMA (מנהל הרכש של משרד הביטחון אמריקאי), כשתפקידי הוא לבדוק ולאשר ייצוא מוצרים של חברות ישראליות ליחידות צבאיות אמריקאיות כגון US Army, USAF, US Navy וכוחות NATO האמריקאיות. <br><br>
+במשך 28 השנים האחרונות, עבדתי כמנהל אבטחת איכות במספר ענפים שונים, כגון תעשיית המזון, תעשיית הכימיה ותעשיית המתכת. <br>
+אני בעל ניסיון רב בתחום ונמצא בקשר עם חברות המסמיכות ומאשרות את ההתאמה לתקנים הלאומיים ובינלאומיים, מהארץ ומחו"ל, תקנים רבים כגון ISO 9001-2008, TFMS, BRC, P2P, TN, AS9100, ISO 17025, מת"י 005 (תו תקן), Global Gap ועוד.  <br>
+אני משלב אבטחת איכות עם פיתוח מערכות ל-TQM, שיטות סטטיסטיות מבוססות על SPC בשיטות כגון JURAN ו-DEMING המסייעות בייעול המערכות ע"י הכנסת יישומים ממוחשבים על-פי צורך המפעל, פיתוח עצמי ומותאם כולל הפחתת עלויות. <br><br>
+כמו כן, אני מנטר תהליכים ועוזר בביצוע "סיעור מוחות", כדי לשלב פתרונות דרך לימוד ועזרה הדדית ולבנות מנגנון של מערכות MRB.
+מטעם עבודתי אני גם מנחה צוותים שונים ועוזר לתפעל צוותי איכות בנושאים אשר נוגעים בחוק ומחויבים על-פיו, כגון צוות בטיחות, צוות HACCP (בטיחות במזון) וכדומה. <br></p>
+        </div>
+        <div class="AboutLeft">
+            <img src="../img/nestor.jpg">
+        </div>
+    </section>
+    
+    <!-- Profile -->
+    <section id="Profile">
+        <div class="profileDiv">
+            <div class="ResumeContext">
+                <div class="ResLeft">
+                    <h2>השכלה</h2><br>
+                    
+                    <h3><i><b>2015</b></i> - קורס אודיטור NDT</h3>
+                    <p>גבי שואף בע"מ</p><br>
+
+                    <h3><i><b>2013</b></i> - קורס בוחן מוסמך</h3>
+                    <p>סיבט & סוכנות ניהול חוזי ההגנה האמריקאית</p><br> 
+
+                    <h3><i><b>2010</b></i> - ראש צוות HACCP</h3>
+                    <p>מכון התקנים הישראלי</p><br>
+
+                    <h3><i><b>2008</b></i> - ראש צוות HACCP</h3>
+                    <p>סקאל ישראל פיקוח והתעדה בע"מ</p><br>
+
+                    <h3><i><b>2007</b></i> - עיון בנושאים ניהול וחבר דירקטוריון</h3>
+                    <p>קיבוץ גשר</p><br>
+
+                    <h3><i><b>2001</b></i> - מצום עלויות איכות</h3>
+                    <p>אנת בע"מ</p><br> 
+
+                    <h3><i><b>2001</b></i> - ISO 9000</h3>
+                    <p>מכון התקנים הישראלי</p><br> 
+
+                    <h3><i><b>2001</b></i> - נאמן בטיחות</h3>
+                    <p>המוסד לביטוח ולגהות</p><br> 
+
+                    <h3><i><b>1999</b></i> - עורכי מבדקים פנימיים לאיכות</h3>
+                    <p>אנת בע"מ $ האיגוד הישראלי לאיכות</p><br>
+
+                    <h3><i><b>1997</b></i> - עלויות איכות וכלי ניהולי לשיפור ריווחיות</h3>
+                    <p>אוניברסיטת חיפה</p><br>
+
+                    <h3><i><b>1996</b></i> - תכנון לאיכות בשילוב מתודולוגית מכון ג'וראן ושיטות טגוצ'י</h3>
+                    <p>מכון ג'וראן בישראל</p><br> 
+
+                    <h3><i><b>1995</b></i> - בקרת תהליך סטטיסטית</h3>
+                    <p>מכון התקנים הישראלי</p><br> 
+
+                    <h3><i><b>1991</b></i> - רכז אבטחת האיכות</h3>
+                    <p>האיגוד הישראלי לאיכות</p><br> 
+
+                    <h3><i><b>1974</b></i> - <i>לימודי תעודה</i> - הנדסת מחשבים</h3>
+                    <p>האוניברסיטה הטכנולוגית הלאומית, ארגנטינה</p><br>                        
+                </div>
+
+                <div class="ResRight">
+                
+                    <h2>ניסיון תעסוקתי</h2><br>
+                    
+                    <h3><i>2014 – היום</i> - מבקר בכיר</h3>
+                    <p>באיי.אס.די בע"מ, בשיתוף עבודה עם סיבט וסוכנות ניהול חוזי ההגנה האמריקאית</p><br>
+
+                    <h3><i>2013 – היום</i> - מבקר בכיר - נציג אבטחת איכות</h3>
+                    <p>פרילנסר</p><br>
+
+                    <h3><i>2010 – 2013</i> - בודק בכיר</h3>
+                    <p>בתמר העמקים בע"מ</p><br>
+
+                    <h3><i>2007 – 2010</i> - בודק בכיר</h3>
+                    <p>בזורגניקה בע"מ</p><br> 
+
+                    <h3><i>1986 – 2007</i> - בודק בכיר</h3>
+                    <p>בגבס גשר בע"מ</p><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="Contact">
+        <div class="ContactInfo">
+            <ul>
+                <br><li><a href="mailto:nestor_c@gesher.org.il">nestor_c@gesher.org.il</a></li><br>
+                <li><a href="https://il.linkedin.com/pub/nestor-czerwacki/83/a15/610" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></li>
+            </ul>
+        </div>
+            <div class="ContactForm">  
+            <form class="form" action="mail.php" method="POST" name="contact_form" onsubmit="return checkForm()">
+                <p class="name" style="float:right;">
+                    <input type="text" name="name" id="name" placeholder="הכניסו את שמכם" required style="direction: rtl; text-align: right; margin-right: 22px;"/>
+                    <label for="name">שם</label>
+                </p><br><br>
+                <p class="email" style="float:right;">
+                    <input type="email" name="email" id="email" placeholder="mail@exemple.com" required/>
+                    <label for="email">דוא"ל</label>
+                </p><br><br>
+                <p class="text">
+                    <textarea name="message" placeholder="תכתבו לי משהו.." required style="text-align: right; direction: rtl;"></textarea>
+                </p><br><br><br><br><br><br><br><br>
+                <p class="submit">
+                    <input type="submit" value="שלח" style="    margin-top: 32px;;">
+                </p>
+                <p>
+                    <label style="direction:rtl; text-align:right; float:right;">כמה זה 2+2? (אנטי-<i style="color: red;">ספאם</i>)</label>
+                    <input name="spamcheck" placeholder="ענו על השאלה כדי לשלוח" required style="float:right; text-align:right;">
+                </p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+       <br>
+        &copy; Naor Czerwacki, 2016 at <a class="mailMe" href="mailto:servebaki@hotmail.com">servebaki@hotmail.com</a>
+    </footer>
+    </body>
+</html>

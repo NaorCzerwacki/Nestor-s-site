@@ -1,0 +1,467 @@
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+}
+
+body {
+	color: #fff;
+	font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+	font-size: 100%;
+	text-align: center;
+    background: #2c2c2c;
+    overflow-x:hidden;
+}
+
+/* Header */
+#Home {
+    height: 100%;
+    width: 100%;
+	background: url(../img/header.jpg) no-repeat center center fixed;
+    /* Although it's not required, i like to give credits where it's due. the picture was taken from  https://pixabay.com which is a website for free use of pictures */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.homeDiv{
+    height: 100%;
+    width: 100%;
+    background: rgba(57, 57, 57, 0.5);
+}
+
+.headlines{
+    padding: 15% 20% 20%;
+    font-size: 300%;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: blurFadeIn 1s ease-in ;
+	-moz-animation: blurFadeIn 1s ease-in ;
+	-ms-animation: blurFadeIn 1s ease-in ;
+	animation: blurFadeIn 1s ease-in ;
+}
+
+    .headlines>div{
+        padding: 20px;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: white;
+    }
+
+@keyframes blurFadeIn{
+	0%{
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		transform: scale(2);
+	}
+    25%{
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		transform: scale(1.75);
+	}
+	50%{
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+		transform: scale(1.5);
+	}
+    75%{
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+		transform: scale(1.25);
+	}
+	100%{
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+		transform: scale(1);
+	}
+}
+
+/* Scroll Down */
+#ScrlDiv{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 115px;
+    padding-left: 46%;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+} 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+} 
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+#scrollDown{
+    font-size: 125%;
+    position: relative;
+    top: 5px;
+}
+
+p#scrollDownArrow{
+	text-align: center;
+	color: white;
+	font-size: 150%;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+    box-shadow: 0 2px 25px black;
+    -webkit-box-shadow: 0 2px 25px black;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #757575;
+    font-size: 18px;
+	text-transform: uppercase;
+}
+
+    ul li.navMenu {
+        display: none;
+    }  
+
+/* About */
+#About {
+	background: url(../img/about.jpg) no-repeat center center fixed;
+    /* Although it's not required, i like to give credits where it's due. the picture was taken from  https://pixabay.com which is a website for free use of pictures */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 1000px;
+}
+
+.AboutLeft{
+    height: 1000px;
+    width: 25%;
+    float: left;
+}
+
+    .AboutLeft>img{
+        height: auto;
+        width: 65%;
+        margin-top: 25%;
+        float: right;
+        border: 2px solid black;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.75);
+    }
+
+.AboutRight{
+    height: 1000px;
+    width: 74%;
+    float: right;
+    font-size: 155%;
+    text-shadow: 0px 15px 10px #000000;
+}
+
+    .AboutRight>p{
+        margin: 14% 10% 0 30px;
+        float: left;
+        text-align: left;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black;
+    }
+
+/* Profile */
+#Profile {
+	background: url(../img/resume.jpg) no-repeat center center fixed;
+    /* Although it's not required, i like to give credits where it's due. the picture was taken from  https://pixabay.com which is a website for free use of pictures */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 1000px;
+    width: auto;
+    -moz-box-shadow: inset 0 0 30px 10px #000000;
+    -webkit-box-shadow: inset 0 0 30px 10px #000000;
+    box-shadow: inset 10px 0 30px 10px #000000;
+
+}
+
+.profileDiv{
+    height: 905px;
+    width: 100%;
+    background: rgba(57, 57, 57, 0.77);
+    padding-top: 5%;
+    -moz-box-shadow: inset 0 0 35px -5px #000000;
+    -webkit-box-shadow: inset 0 0 35px -5px #000000;
+    box-shadow:  0 0 35px -5px #000000;
+}
+
+    .profileDiv>p{
+        margin: 20% 10% 0 30px;
+        float: right;
+        text-align: right;
+    }
+
+.ResLeft{
+    width: 38%;
+    float: left;
+    text-align: right;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.ResRight{
+    width: 60%;
+    float: right;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Contact */
+#Contact {
+    background: url(../img/contact.jpg) no-repeat center center fixed;
+    /* Although it's not required, i like to give credits where it's due. the picture was taken from  https://pixabay.com which is a website for free use of pictures */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 800px;
+    padding-top: 4%;
+    position: relative;
+}
+
+.ContactInfo{
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    font-size: 200%;
+}
+
+    .ContactInfo>ul{
+        float:right;
+        list-style-type: none;
+        padding-right: 40px;
+    }
+    
+    .ContactInfo ul a{
+        color: white;
+        line-height: 100%;
+    }
+    
+        .ContactInfo ul a:link{
+            color: white;
+        }
+
+        .ContactInfo ul a :visited{
+            color:rgba(212, 212, 212, 0.85);
+        }
+
+        .ContactInfo ul a:active{
+            color:rgba(212, 212, 212, 0.85);
+        }
+
+        .ContactInfo ul a:hover{
+            -moz-transition: all .25s ease-in;
+            -o-transition: all .25s ease-in;
+            -webkit-transition: all .25s ease-in;
+            transition: all .25s ease-in;
+            color: #a3a3a3;
+            border-bottom: 2px solid red;
+        }
+
+.ContactForm{
+    background: rgba(57, 57, 57, 0.9);
+    position: absolute;
+    height: auto;
+    width: 22%;
+    font-size: 127%;
+    padding: 10px;
+    border-radius: 15px;
+    left: 78px;
+    margin-top: 10px;
+}
+
+    .ContactForm>p{
+        margin: 20% 10% 0 30px;
+        float: left;
+        text-align: left;
+    }
+
+
+/** Form **/
+#contact_form{
+    width: auto;
+    height: 93%;
+    position:relative;
+    padding:10px 10px 10px 15px;
+    margin:10px;
+    margin-right:40%;
+    color: #d6d6d6;
+    border-left: 2px solid rgba(57, 57, 57, 0.77);
+}
+
+#contact_form p{
+    margin-bottom: 20px;
+}
+
+form{
+    height: auto;
+    width: 100%;
+}
+
+input, textarea {
+    float: left;
+	padding: 10px;
+	border: none;
+	width: 200px;
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+textarea {
+    float: left;
+	width: 100%;
+	height: 150px;
+	max-width: 400px;
+	line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {  
+   color: white; 
+}
+
+.form label {
+	margin-left: 10px;
+	color: #d6d6d6;
+    font-weight: bold;
+    margin-right: 10px;
+    line-height: 35px;
+    float: left;
+}
+
+.submit input {
+	width: 100px; 
+	height: 40px;
+	background:rgba( 192, 218, 247, 0.8)
+	color: rgba(55, 61, 67, 0.9);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid rgba(55, 61, 67, 0.4);
+    font-weight: bold;
+}
+
+.submit input:hover {
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    box-shadow: -1px 1px 8px #b7b7b7, 1px -1px 8px #b7b7b7;
+    -moz-box-shadow: -1px 1px 8px #b7b7b7, 1px -1px 8px #b7b7b7;
+    -webkit-box-shadow: -1px 1px 8px #b7b7b7, 1px -1px 8px #b7b7b7;
+}
+
+#contact_form h3{
+    line-height: 30px;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+footer {
+	background: #484848;
+    height:50px;
+    color: white;
+    box-shadow: 0 2px 25px black;
+    -webkit-box-shadow: 0 -7px 25px black;
+}
+
+.mailMe{
+    color: white;
+}
+
+    .mailMe:link{
+        color: white;
+    }
+
+    .mailMe:visited{
+        color:rgba(212, 212, 212, 0.85);
+    }
+
+    .mailMe:active{
+        color:rgba(212, 212, 212, 0.85);
+    }
+
+    .mailMe:hover{
+        -moz-transition: all .25s ease-in;
+        -o-transition: all .25s ease-in;
+        -webkit-transition: all .25s ease-in;
+        transition: all .25s ease-in;
+        color: #a3a3a3;
+        border-bottom: 2px solid red;
+    }
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    
+    ul li:not(:first-child) {
+        display: none;
+    }
+    ul li.navMenu {
+        display: block;
+    } 
+
+}
+
+@media all screen and (max-width: 600px) {
+    
+    headlines p{
+        font-size: 150%;
+    }
+}
